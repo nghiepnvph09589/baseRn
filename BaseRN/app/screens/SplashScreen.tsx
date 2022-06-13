@@ -1,11 +1,18 @@
+import R from '@app/assets/R'
+import FstImage from '@app/components/FstImage/FstImage'
+import { dimensions } from '@app/theme'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
 
 const SplashScreen = () => {
   return (
-    <View>
-      <Text children={'Hello'} />
-    </View>
+    <FstImage
+      source={R.images.img_splash}
+      style={{
+        width: dimensions.width,
+        height: dimensions.height,
+      }}
+      resizeMode="cover"
+    />
   )
 }
 
