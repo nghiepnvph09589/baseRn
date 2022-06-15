@@ -6,6 +6,7 @@ import isEqual from 'react-fast-compare'
 import { connect } from 'react-redux'
 import NavigationUtil from './NavigationUtil'
 import { APP_SLICE, ROOT_STACK, SCREEN_ROUTER } from '@app/constant/Constant'
+import { StackAuthScreen } from './stack/Auth'
 
 const RootStack = createStackNavigator()
 
@@ -16,6 +17,13 @@ const renderSwitch = (switchApp: string) => {
         <RootStack.Screen
           name={SCREEN_ROUTER.SPLASH}
           component={SplashScreen}
+        />
+      )
+    case SCREEN_ROUTER.AUTH:
+      return (
+        <RootStack.Screen
+          name={SCREEN_ROUTER.AUTH}
+          component={StackAuthScreen}
         />
       )
     default:

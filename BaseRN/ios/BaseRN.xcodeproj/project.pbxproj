@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		645F5CD9285976AC001AACBC /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645F5CD62859763A001AACBC /* libCodePush.a */; };
+		645F5CDB285976FF001AACBC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 645F5CDA285976FF001AACBC /* libz.tbd */; };
 		7699B88040F8A987B510C191 /* libPods-BaseRN-BaseRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BaseRN-BaseRNTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -23,6 +25,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = BaseRN;
+		};
+		645F5CD52859763A001AACBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645F5CD02859763A001AACBC /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = CodePush;
+		};
+		645F5CD72859763A001AACBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645F5CD02859763A001AACBC /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F886647B1F4ADB500036D01B;
+			remoteInfo = "CodePush-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +57,8 @@
 		5709B34CF0A7D63546082F79 /* Pods-BaseRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRN.release.xcconfig"; path = "Target Support Files/Pods-BaseRN/Pods-BaseRN.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-BaseRN-BaseRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRN-BaseRNTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseRN-BaseRNTests/Pods-BaseRN-BaseRNTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BaseRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		645F5CD02859763A001AACBC /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
+		645F5CDA285976FF001AACBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BaseRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BaseRN-BaseRNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRN-BaseRNTests.release.xcconfig"; path = "Target Support Files/Pods-BaseRN-BaseRNTests/Pods-BaseRN-BaseRNTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -59,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645F5CDB285976FF001AACBC /* libz.tbd in Frameworks */,
+				645F5CD9285976AC001AACBC /* libCodePush.a in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-BaseRN.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +119,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				645F5CDA285976FF001AACBC /* libz.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-BaseRN.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-BaseRN-BaseRNTests.a */,
@@ -106,9 +127,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		645F5CD12859763A001AACBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645F5CD62859763A001AACBC /* libCodePush.a */,
+				645F5CD82859763A001AACBC /* libCodePush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				645F5CD02859763A001AACBC /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -222,6 +253,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 645F5CD12859763A001AACBC /* Products */;
+					ProjectRef = 645F5CD02859763A001AACBC /* CodePush.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* BaseRN */,
@@ -229,6 +266,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		645F5CD62859763A001AACBC /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = 645F5CD52859763A001AACBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		645F5CD82859763A001AACBC /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = 645F5CD72859763A001AACBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
