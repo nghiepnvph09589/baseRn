@@ -1,13 +1,13 @@
 import { SCREEN_ROUTER } from '@app/constant/Constant'
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-const switchNavigatorSlice: any = createSlice({
+const switchNavigatorSlice = createSlice({
   name: 'switchNavigatorReducer',
   initialState: {
     switch: SCREEN_ROUTER.SPLASH,
   },
   reducers: {
-    navigateSwitch: (state, action) => {
+    navigateSwitch: (state, action: PayloadAction<string>) => {
       state.switch = action.payload
     },
   },

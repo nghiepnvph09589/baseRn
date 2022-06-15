@@ -223,7 +223,7 @@ const BlockComponent = (props: BlockProps) => {
       top,
       width,
       zIndex,
-    ],
+    ]
   )
   return (
     <View style={styleComponent} {...rest}>
