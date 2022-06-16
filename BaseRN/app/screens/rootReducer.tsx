@@ -1,7 +1,7 @@
-import switchNavigatorSlice from './Navigation/switchNavigatorSlice'
+import SwitchNavigatorSlice from '@app/Navigation/switchNavigatorSlice'
 
 const rootReducer = {
-  switchNavigatorReducer: switchNavigatorSlice,
+  switchNavigatorReducer: SwitchNavigatorSlice,
 }
 
 export default rootReducer

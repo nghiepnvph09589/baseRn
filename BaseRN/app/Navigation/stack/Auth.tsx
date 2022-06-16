@@ -10,7 +10,11 @@ const authScreen = {
 const Stack = createStackNavigator()
 export const StackAuthScreen = () => {
   return (
-    <Stack.Navigator headerMode="none">
+    <Stack.Navigator
+      screenOptions={() => ({
+        headerShown: false,
+      })}
+    >
       {Object.keys(authScreen).map((item, index) => (
         <Stack.Screen key={index} name={item} component={authScreen[item]} />
       ))}

@@ -1,5 +1,5 @@
 import R from '@app/assets/R'
-import NavigationUtil from '@app/screens/Navigation/NavigationUtil'
+import NavigationUtil from '@app/Navigation/NavigationUtil'
 import * as theme from '@app/theme'
 import { colors } from '@app/theme'
 import React, { Component } from 'react'

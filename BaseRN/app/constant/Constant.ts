@@ -2,6 +2,13 @@ export const SCREEN_ROUTER_AUTH = {
   SPLASH: 'SPLASH',
   LOGIN: 'LOGIN',
 }
+export const SCREEN_ROUTER_APP = {
+  SPLASH: 'SPLASH',
+  HOME: 'HOME',
+  MOVIE: 'MOVIE',
+  NOTIFICATION: 'NOTIFICATION',
+  ACCOUNT: 'ACCOUNT',
+}
 export const SCREEN_ROUTER = {
   SPLASH: 'SPLASH',
   AUTH: 'AUTH',
@@ -9,6 +16,13 @@ export const SCREEN_ROUTER = {
 }
 export const ROOT_STACK = {
   MAIN_APP: 'MAIN_APP',
+}
+
+export const MAIN_TAB = {
+  HOME: 'HOME',
+  MOVIE: 'MOVIE',
+  ACCOUNT: 'ACCOUNT',
+  NOTIFICATION: 'NOTIFICATION',
 }
 
 export const APP_SLICE = {

@@ -5,14 +5,14 @@ import { dimensions } from '@app/theme'
 import React, { useEffect } from 'react'
 import splashScreen from 'react-native-splash-screen'
 import { useDispatch } from 'react-redux'
-import { navigateSwitch } from './Navigation/switchNavigatorSlice'
+import { navigateSwitch } from '../Navigation/switchNavigatorSlice'
 
 const SplashScreen = () => {
   const Dispatch = useDispatch()
   useEffect(() => {
     splashScreen.hide()
 
-    Dispatch(navigateSwitch(SCREEN_ROUTER.AUTH))
+    Dispatch(navigateSwitch(SCREEN_ROUTER.MAIN))
   }, [Dispatch])
   return (
     <FstImage
