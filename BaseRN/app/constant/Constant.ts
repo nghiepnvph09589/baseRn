@@ -27,6 +27,7 @@ export const MAIN_TAB = {
 
 export const APP_SLICE = {
   SWITCH: 'switchNavigatorReducer',
+  LIST_PROVINCE: 'listProvinceReducer',
 }
 const EMAIL_REGEX =
   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i
