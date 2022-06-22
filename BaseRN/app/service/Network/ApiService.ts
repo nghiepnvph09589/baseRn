@@ -53,14 +53,14 @@ function handleResponse<T>(data: ResponseType<T>) {
 }
 
 export const ApiClient = {
-  get: (url: string, payload: any) =>
+  get: (url: string, payload: object) =>
     handleResult(axiosClient.get(url, payload)),
-  post: (url: string, payload: any) =>
+  post: (url: string, payload: object) =>
     handleResult(axiosClient.post(url, payload)),
-  put: (url: string, payload: any) =>
+  put: (url: string, payload: object) =>
     handleResult(axiosClient.put(url, payload)),
-  path: (url: string, payload: any) =>
+  path: (url: string, payload: object) =>
     handleResult(axiosClient.patch(url, payload)),
-  delete: (url: string, payload: any) =>
+  delete: (url: string, payload: object) =>
     handleResult(axiosClient.delete(url, { data: payload })),
 }

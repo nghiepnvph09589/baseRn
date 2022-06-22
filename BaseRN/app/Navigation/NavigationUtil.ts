@@ -15,13 +15,13 @@ function navigateWithKey(name: string, params?: any, key?: string) {
   if (_navigator)
     _navigator.dispatch(CommonActions.navigate({ name, params, key }))
 }
-function navigate(name: string, params?: any) {
+function navigate(name: string, params?: object | undefined) {
   if (_navigator) _navigator.dispatch(CommonActions.navigate(name, params))
 }
-function replace(name: string, params?: any) {
+function replace(name: string, params?: object | undefined) {
   if (_navigator) _navigator.dispatch(StackActions.replace(name, params))
 }
-function push(name: string, params?: any) {
+function push(name: string, params?: object | undefined) {
   if (_navigator) _navigator.dispatch(StackActions.push(name, params))
 }
 function goBack() {

@@ -4,6 +4,7 @@ const images = {
   ic_cart: require('./images/ic_cart.png'),
   ic_home: require('./images/ic_home.png'),
   ic_notification: require('./images/ic_notification.png'),
+  ic_tym: require('./images/ic_tym.png'),
   img_error: require('./images/img_error.png'),
   img_splash: require('./images/img_splash.png'),
 }

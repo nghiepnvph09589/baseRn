@@ -43,10 +43,10 @@ const TabBarNameRequireLogin = [ACCOUNT]
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
-const MainTab = (route: any) => {
+const MainTab = (route: { route: { name: string; key: string } }) => {
   const dispatch = useDispatch()
-  const routeName = getFocusedRouteNameFromRoute(route)
-  reactotron.log!('routeName', routeName)
+  // const routeName = getFocusedRouteNameFromRoute(route)
+  reactotron.log!('routeName', route)
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({

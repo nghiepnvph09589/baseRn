@@ -42,7 +42,7 @@ class AsyncStoreService {
    * @param key The key to fetch.
    * @param value The value to store.
    */
-  async save(key: string, value: any) {
+  async save(key: string, value: string) {
     try {
       await AsyncStorage.setItem(key, JSON.stringify(value))
       return true

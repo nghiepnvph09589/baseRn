@@ -43,7 +43,7 @@ const renderSwitch = (switchApp: string) => {
   }
 }
 
-const AppNavigatorComponent = (props: any) => {
+const AppNavigatorComponent = (props: { switch: string }) => {
   return (
     <NavigationContainer
       ref={navigatorRef => {
@@ -62,7 +62,7 @@ const AppNavigatorComponent = (props: any) => {
 }
 
 const AppNavigator = memo(AppNavigatorComponent, isEqual)
-const mapStateToProps = (state: any) => ({
+const mapStateToProps = (state: { [x: string]: { switch: string } }) => ({
   switch: state[APP_SLICE.SWITCH].switch,
 })
 
